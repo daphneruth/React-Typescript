@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import React from "react";
 
-const NewTodo =()=>{
+const NewTodo =(props)=>{
     const todoInputRef =useRef<HTMLInputElement>(null);
 const submitHandler =(event:React.FormEvent) =>{
     event.preventDefault();
@@ -11,7 +11,10 @@ const submitHandler =(event:React.FormEvent) =>{
     if(enteredText?.trim().length ===0)
 {
     return
-}};
+}
+  
+   props.onAddTodo(enteredText)
+};
     return(
         <form onSubmit={submitHandler}>
             <label htmlFor="text">Todo text</label>
