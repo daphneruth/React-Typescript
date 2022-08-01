@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
 
-    <Todos/>  
+    <Todos items={['Learn Node', 'Learn React']}/>  
 
     </div>
     
