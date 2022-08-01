@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Todo from '../../Models/todo';
+import Todo from '../Models/todo';
 
 type TodosContextObj = {
   items: Todo[];
@@ -23,6 +23,7 @@ const TodosContextProvider: React.FC = (props) => {
     setTodos((prevTodos) => {
       return prevTodos.concat(newTodo);
     });
+    
   };
 
   const removeTodoHandler = (todoId: string) => {

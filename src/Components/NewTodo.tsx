@@ -16,7 +16,6 @@ const NewTodo: React.FC = () => {
     const enteredText = todoTextInputRef.current!.value;
 
     if (enteredText.trim().length === 0) {
-      // throw an error
       return;
     }
 
