@@ -1,9 +1,8 @@
-function Todos() {
+function Todos(props:any) {
   return (
     <div>
         <ul>
-            <li>Learn Node</li>
-            <li>Learn React</li>
+           {}
         </ul>
     </div>
   )
