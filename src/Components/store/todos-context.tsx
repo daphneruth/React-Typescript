@@ -11,4 +11,7 @@ const TodoContext = React.createContext<{
     addTodo: () => {},
     removeTodo: (id:string)=> {}
 })
+const TodosContextProvider:React.FC= (props)=> {
+    return <TodosContext.Provider>{props.children}</TodosContext.Provider>
+}
 
