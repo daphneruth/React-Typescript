@@ -1,8 +1,8 @@
 const NewTodo =()=>{
     return(
         <form>
-            <label>Todo text</label>
-            <input type='text'/>
+            <label htmlFor="text">Todo text</label>
+            <input type='text' id="text"/>
             <button>Add Todo</button>
         </form>
     )
