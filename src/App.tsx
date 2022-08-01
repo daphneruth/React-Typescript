@@ -1,3 +1,4 @@
+import NewTodo from './Components/NewTodo';
 import Todos from './Components/Todos';
 import Todo from './Models/todo';
 
