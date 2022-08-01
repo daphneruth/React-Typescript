@@ -1,9 +1,10 @@
+import { useState } from "react";
 import NewTodo from "./Components/NewTodo";
 import Todos from "./Components/Todos";
 import Todo from "./Models/todo";
 
 function App() {
-  const todos = [new Todo("Learn Node"), new Todo("Learn React")];
+  const [todos, setTodo ]= useState()
   const addTodoHandler = (todoText: string) => {};
   return (
     <div>
