@@ -1,6 +1,6 @@
 import NewTodo from './Components/NewTodo';
 import Todos from './Components/Todos';
-import TodosContextProvider from './Components/store/todos-context';
+import TodosContextProvider from './store/todos-context';
 
 function App() {
   return (
