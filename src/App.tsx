@@ -4,7 +4,8 @@ import Todo from './Models/todo';
 function App() {
 
   const todos =[
-    
+    new Todo('Learn Node'),
+    new Todo('Learn React')
   ]
   return (
     <div>
