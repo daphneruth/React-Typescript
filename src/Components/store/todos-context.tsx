@@ -13,7 +13,12 @@ const TodoContext = React.createContext<{
     removeTodo: (id:string)=> {}
 })
 const TodosContextProvider:React.FC= (props)=> {
-    useState()
+    useState() const contextValue: TodosContextObj = {
+        items: todos,
+        addTodo: addTodoHandler,
+        removeTodo: removeTodoHandler,
+      }
+
     return <TodosContext.Provider>{props.children}</TodosContext.Provider>
 }
 
