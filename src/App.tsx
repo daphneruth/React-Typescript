@@ -7,10 +7,13 @@ function App() {
   const todos =[
     new Todo('Learn Node'),
     new Todo('Learn React')
-  ]
+  ];
+  const addTodoHandler =(todoText:string)=> {
+
+  }
   return (
     <div>
-    <NewTodo/>
+    <NewTodo onAddTodo={addTodoHandler}/>
     <Todos items={todos}/>  
 
     </div>
