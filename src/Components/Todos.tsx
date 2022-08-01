@@ -4,7 +4,7 @@ const Todos:React.FC<{items:string[]}> = (props)=> {
   return (
     <div>
         <ul>
-           {props.}
+           {props.items.map((item)=><li></li>)}
         </ul>
     </div>
   )
