@@ -1,6 +1,8 @@
+import { useRef } from "react";
 import React from "react";
 
 const NewTodo =()=>{
+    const todoInputRef =useRef();
 const submitHandler =(event:React.FormEvent) =>{
     event.preventDefault();
 };
