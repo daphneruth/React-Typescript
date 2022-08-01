@@ -4,7 +4,7 @@ import Todos from "./Components/Todos";
 import Todo from "./Models/todo";
 
 function App() {
-  const [todos, setTodo ]= useState()
+  const [todos, setTodo ]= useState<Todo[]>([]);
   const addTodoHandler = (todoText: string) => {};
   return (
     <div>
