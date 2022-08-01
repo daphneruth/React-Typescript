@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useState } from "react";
 import Todo from "../../Models/todo";
 
 const TodoContext = React.createContext<{
@@ -12,6 +13,7 @@ const TodoContext = React.createContext<{
     removeTodo: (id:string)=> {}
 })
 const TodosContextProvider:React.FC= (props)=> {
+    useState()
     return <TodosContext.Provider>{props.children}</TodosContext.Provider>
 }
 
