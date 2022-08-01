@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
 
-    <Todos items={['Learn Node', 'Learn React']}/>  
+    <Todos items={todos}/>  
 
     </div>
     
