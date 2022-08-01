@@ -9,7 +9,8 @@ const submitHandler =(event:React.FormEvent) =>{
     return(
         <form onSubmit={submitHandler}>
             <label htmlFor="text">Todo text</label>
-            <input type='text' id="text"/>
+            <input type='text' id="text" ref={todoInputRef}/>
+            />
             <button>Add Todo</button>
         </form>
     )
